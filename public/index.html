@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <!--
@@ -19,9 +19,36 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Fashe Shop</title>
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/bootstrap/css/bootstrap.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/fonts/themify/themify-icons.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/fonts/elegant-font/html-css/style.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/plugins/animate/animate.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/plugins/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/plugins/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/plugins/select2/select2.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/plugins/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/plugins/slick/slick.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/plugins/lightbox2/css/lightbox.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/util.css">
+      <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/main.css">
+    <!--===============================================================================================-->
   </head>
-  <body>
+  <body class="animsition">
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -30,11 +57,54 @@
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
+      You can add web%PUBLIC_URL%/assets/fonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!--===============================================================================================-->
+	<script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/animsition/js/animsition.min.js"></script>
+  <!--===============================================================================================-->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/bootstrap/js/popper.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/select2/select2.min.js"></script>
+    
+  <!--===============================================================================================-->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/slick/slick.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/slick-custom.js"></script>
+  <!--===============================================================================================-->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/countdowntime/countdowntime.js"></script>
+  <!--===============================================================================================-->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/lightbox2/js/lightbox.min.js"></script>
+  <!--===============================================================================================-->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript">
+      $('.block2-btn-addcart').each(function(){
+        var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+        $(this).on('click', function(){
+          swal(nameProduct, "is added to cart !", "success");
+        });
+      });
+  
+      $('.block2-btn-addwishlist').each(function(){
+        var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+        $(this).on('click', function(){
+          swal(nameProduct, "is added to wishlist !", "success");
+        });
+      });
+    </script>
+  
+  <!--===============================================================================================-->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/parallax100/parallax100.js"></script>
+    <script type="text/javascript">
+          $('.parallax100').parallax100();
+    </script>
+  <!--===============================================================================================-->
+    <script src="%PUBLIC_URL%/assets/js/main.js"></script>
   </body>
 </html>
